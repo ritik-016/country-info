@@ -8,7 +8,7 @@ export const About = () => {
             </h2>
 
             <div className="gradient-cards">
-                {countryFacts.map((country) => {
+                {countryFacts?.map((country) => {
                     const {id, countryName, capital, population, interestingFact} = country
                     return <div className="card" key={id}>
                     <div className="container-card bg-blue-box">
